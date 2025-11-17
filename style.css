@@ -1,0 +1,677 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: auto;
+    padding: 0px 10px 0px 10px;
+}
+.main-nav {
+    height: 23vh;
+    width: 100%;
+    background-color: #2851A3;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Upper Nav */
+.upper-nav {
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+
+.upper-left {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+.upper-left img {
+    width: 30%;
+    height: 65%;
+}
+
+.upper-left h4 {
+    font-size: 2.2vh;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.upper-right {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-right {
+    width: 85%;
+    height: 60%;
+    margin-top: 10px;
+    background-color: rgb(245, 235, 235);
+    border-radius: 10px;
+    display: flex;
+}
+
+.anch {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.anch a {
+    font-size: 3.2vh;
+    text-decoration: none;
+    color: #2851A3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.anch i {
+    font-size: 3vh;
+    margin-left: -0.5vw;
+}
+
+.btn {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    font-size: 3.1vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 75%;
+    height: 5.5vh;
+    background-color: #2851A3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn button:hover {
+    font-size: 3.3vh;
+    width: 78%;
+    height: 5.9vh;
+    transition: all ease-in-out 0.1s;
+}
+
+/* Lower Nav */
+.lower-nav {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marq {
+    height: 67%;
+    width: auto;
+    background-color: rgb(231, 226, 226);
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marq::-webkit-scrollbar{
+    display: none;
+}
+.marq .txt {
+    font-size: 3vh;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2851A3;
+    font-weight: 700;
+    animation: scroll 30s infinite reverse linear;
+    white-space: nowrap;    
+}
+.marq:hover .txt{
+    animation-play-state:paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(-100% - 30px));
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+/*Hero Section*/
+.H-sec{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+ }
+.H-sec h2{
+font-size: 4.5vmax;
+font-family: "Gilroy" ;
+position: absolute;
+color: white;
+}
+#urdu{
+ margin-top: 15%;   
+}
+#eng{
+    margin-top: 21%;
+}
+#join{
+    margin-top: 26%;
+}
+#join span{
+    color: red;
+    position: relative;
+}
+/*Hero 2*/
+.H-sec2{
+    width: 100%;
+    height: 73vh;
+    background-color: #E1EBEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.H-sec2-upper{
+width: 100%;
+height: 25%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+.H-sec2-upper h1{
+font-size: 5vh;
+font-weight: 600;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.H-sec2-upper h3{
+    font-size: 4vh;    
+    margin-top: 5px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.H-sec2-upper h3 span{
+    color: red;
+}
+.H-sec2-lower{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cards{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .card{
+        margin-top: 2px;
+        width: 13vw;
+        height: 248px;
+        border-radius: 10px;
+        border: 1px solid white;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+      }
+      .card a{
+        text-decoration: none;
+        position: absolute;
+        color: white;
+        margin-top:6%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3vh;
+        color: white;
+        opacity: 0;
+        transition: all linear 0.7s;
+      }
+      .result{
+        padding-top: 40px;
+    }
+ 
+    #card1{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/CaderImages/03-01-2024-20-12-2023-pncadet.jpg");
+    background-size: cover;    
+    }
+    #card2{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/CaderImages/03-01-2024-25-08-2023-ssc1.jpeg");
+    background-size: cover;
+    }
+    #card3{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/CaderImages/03-01-2024-25-08-2023-sailor.jpg");
+    background-size: cover;
+    }
+    #card4{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/CaderImages/12-01-2024-marine%20job%20card%202.webp");
+    background-size: cover;       }
+    #card5{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/CaderImages/09-01-2024-civilian%20job%20card.webp");
+    background-size: cover;       
+    } 
+    #card6{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/CaderImages/12-01-2024-job%20card%20m-cadet.webp");
+    background-size: cover;       
+    }
+    
+.overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    right: -100%;
+    background-color:rgba(0, 0,0,0.75);
+    transition: all ease-in-out 0.5s;
+    opacity: 0;
+}       
+.card:hover .overlay{
+    right: 0%;
+    opacity: 1;
+}
+.card:hover a{
+    opacity:1;
+}
+.result:hover a{
+font-size: 5vh;
+}
+.headings{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 4.3vh;
+  text-align: center;
+}
+.headings h4{
+    font-weight: 500;
+    font-size: 20px;
+    width: 16.66%;
+    text-align: center;
+}
+.H-sec3{
+    width: 100%;
+    height: 58vh;
+    background-color: #2851A3;
+    text-align: center;
+    overflow-x: hidden;
+
+}
+.H-sec3 h1{
+    font-size: 5vh;
+    color: white;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 2.8vh;
+    padding-bottom: 1.5vh;
+}
+
+.slider{
+    width: 110%;
+    height: 65%;
+    padding-top: 35px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 26%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border: 5px solid white;   
+    
+}
+
+  .swiper-slide img {
+    position: absolute;
+    display:block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .slider-lower-text{
+    position: absolute;
+    margin-top: 46%;
+    width: 100%;
+    height: 25%;
+    text-align: left;
+    background-color: rgba(40, 81,163, 0.8);
+    color: #fff;
+    font-size: 2.5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left: 13px;
+    z-index: 2;
+}
+.H-sec4{
+    width: 100%;
+    height: 140vh;
+    background-color: #E1EBEF;
+}
+#part1{
+    height: 8%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2851A3;
+    font-weight: 400;
+}
+#part2{
+    height: 72%;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+} 
+.part2-upper{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.part2-lower{
+    width: 100%;
+    height: 50%;
+    background-color:white;
+    display: flex;
+    padding: 5vh 13vw 5vh 13vw;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.Qcard{
+    width: 27vw;
+    height: 35vh;
+    border-radius: 6px;
+    background-size: cover;
+    text-align: center;
+}
+.label {
+width: 100%;
+height: 10%;
+background-color:#3A3668;
+margin-top: 55%;
+color: white;
+font-size: 3vh;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.label h5{
+    font-weight:500;
+
+}
+#Qcard1{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/FAQImages/03-01-2024-547494_4055083_Pak-Navy_updates.jpg");
+}
+
+#Qcard2{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/FAQImages/03-01-2024-sscimg.jpg");
+}
+
+#Qcard3{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/FAQImages/03-01-2024-pnd.png");
+}
+
+#Qcard4{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/FAQImages/12-01-2024-sailor.webp");
+}
+
+#Qcard5{
+    background-image: url("https://www.joinpaknavy.gov.pk/storage/uploads/FAQImages/04-01-2024-Civlian_FAQ.webp");
+}
+#part3{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #fff;
+}
+.quaid-qout{
+    width: 70vw;
+    height: 22vh;
+    background-color: #2851A3;
+    border-radius: 10px;
+    display: flex;
+   
+}
+.quaid-qout1{
+    width: 70%;
+    height: 100%;
+    font-size:3.5vh ;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.quaid-qout2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+.quaid-qout2 img{
+position: relative;
+height:92%;
+width: 35%;
+}
+/*Selction and recurmint Center*/
+.Rec-sen{
+    height: 100vh;
+    width: 100%;
+}
+.Rec-sen1{
+    height: 8%;
+    width: 100%;
+}
+.Rec-sen2{
+    width: 100%;
+    height: 92%;
+    background-color: #2851A3;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.Rec-sen2-a{
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Rec-sen2-a h1{
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    color: white;
+    font-size: 6vh;
+}
+.Rec-sen2-b{
+    height: 85%;
+    width: 100%;
+}
+.RSC-Slide{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+     white-space: nowrap;
+     overflow-x: auto;      
+     overflow-y: hidden;
+}
+.RSC-Slide::-webkit-scrollbar{
+    display: none;
+}
+.swiper1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+  .swiper-wrapper1{
+    display: flex;
+    flex-direction: row;
+  }
+  .swiper-slide1{
+    height:76vh;
+    width: 25vw;
+    background: #882525;
+    line-height: 300px;
+    text-align: center;
+}
+.swiper-slide1 img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+  }
+/*Selction and recurmint Center Slide*/
+
+
+/*Footer*/
+.Footer{
+    width: 100%;
+    height:50vh;
+    margin-top: 25px;
+}
+.Footer-u{
+    width: 100%;
+    height: 90%;
+    background-color: #2851A3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Footer-u1{
+    width: 33%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Footer-u1 img{
+    width: 8vw;
+    height: 16vh;
+}
+
+.Footer-u1 p{
+    font-size: 3vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 600;
+    margin-left: 2vw; 
+}
+.Footer-u2{
+    width: 31%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    font-size: 3.2vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+.Footer-u2 a{
+    text-decoration: none;
+    color: white;
+}
+.Footer-u2 i{
+margin-left: 1px;    
+list-style-type: none;
+}
+.Footer-u2 a:hover{
+    text-decoration: underline;
+}
+.Footer-u3{
+    width: 31%;
+    height: 85%;
+}
+.Footer-u3 img{
+    width: 7vw;
+    height:9vh;
+    margin-right: 3px;
+    border: 2px solid white;
+    margin-left: 4px;
+}
+.Footer-u3 h5{
+    font-size: 3.1vh;
+    margin-top: 2.9vh;
+    margin-bottom: 1vh;
+    font-weight: 500;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Lower Footer*/
+.Footer-l{
+    width: 100%;
+    height: 15%;
+    background-color: #E1EBEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    
+}
+.Footer-l a{
+    text-decoration: none;
+    color:#007BFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Footer-l span:hover{
+text-decoration:underline #007BFF;
+}
+.RemoveS li{
+    list-style-type: none;
+}
