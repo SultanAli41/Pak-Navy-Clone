@@ -168,7 +168,7 @@ html, body {
  }
 .H-sec h2{
 font-size: 4.5vmax;
-font-family: "Gilroy" ;
+font-family: "Montserrat" ;
 position: absolute;
 color: white;
 }
@@ -679,4 +679,25 @@ text-decoration:underline #007BFF;
 }
 .RemoveS li{
     list-style-type: none;
+}
+#animation {
+    display: inline-block;
+    height: 60px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+#animation .word {
+    display: block;
+    animation: slide 4s linear infinite;
+    font-weight: 100;
+}
+
+@keyframes slide {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-60px); }
+    50%  { transform: translateY(-120px); }
+    75%  { transform: translateY(-180px); }
+    100% { transform: translateY(0); }
 }
