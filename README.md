@@ -29,8 +29,6 @@ pak-navy-clone/
 │── index.html
 │── /css
 │── /js
-│── /images
-│── /pages
 └── README.md
 ```
 
@@ -39,7 +37,7 @@ pak-navy-clone/
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/pak-navy-clone.git
+   git clone https://github.com/SultanAli41/Pak-Navy-Clone
    ```
 2. Open **index.html** in any browser.
 
