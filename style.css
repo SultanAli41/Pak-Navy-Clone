@@ -185,6 +185,26 @@ color: white;
     color: red;
     position: relative;
 }
+#animation {
+    display: inline-block;
+    height: 55px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+}
+#animation .word {
+    display: block;
+    animation: slide 8s linear infinite;
+    font-weight: 100;
+}
+
+@keyframes slide {
+    0%   { transform: translateY(-200px); }
+    25%  { transform: translateY(-180px); }
+    50%  { transform: translateY(-120px); }
+    75%  { transform: translateY(-60px); }
+    100% { transform: translateY(0px); }
+}
 /*Hero 2*/
 .H-sec2{
     width: 100%;
@@ -679,25 +699,4 @@ text-decoration:underline #007BFF;
 }
 .RemoveS li{
     list-style-type: none;
-}
-#animation {
-    display: inline-block;
-    height: 60px;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-}
-
-#animation .word {
-    display: block;
-    animation: slide 4s linear infinite;
-    font-weight: 100;
-}
-
-@keyframes slide {
-    0%   { transform: translateY(0); }
-    25%  { transform: translateY(-60px); }
-    50%  { transform: translateY(-120px); }
-    75%  { transform: translateY(-180px); }
-    100% { transform: translateY(0); }
 }
