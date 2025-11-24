@@ -531,13 +531,25 @@ position: relative;
 height:92%;
 width: 35%;
 }
+
+.hero-img4 img{
+    height: 90%;
+    width: 98%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: auto;
+    margin-top: 9vh;
+}
+    
 /*Selction and recurmint Center*/
 .Rec-sen{
     height: 100vh;
     width: 100%;
 }
 .Rec-sen1{
-    height: 8%;
+    height: 1%;
     width: 100%;
 }
 .Rec-sen2{
