@@ -48,4 +48,4 @@ You can open an issue or submit a pull request.
 
 ## Support
 
-If you like the project, please give the repository a ⭐.
+If you like the project, please give the repository a ⭐
